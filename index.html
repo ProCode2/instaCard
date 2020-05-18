@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class= "header">
+    <h1 class="logo">InstaCard</h1>
+  </header>
+  
+  <!-- main section -->
+  <section class="create-card">
+    <div class="container">
+      <div class="card-overlay">
+        <div class="card-inner">
+          <div class="top-part">
+            <h3 class="company">ProCode</h3>
+            <h3 class="date">forever</h3>
+          </div>
+          <div class="bottom-part">
+            <h5 class="post">Developer,</h5>
+            <h5 class="name">Prem</h5>
+          </div>
+
+        </div>
+      </div>
+      <!-- card options [the form]  -->
+      <div class="card-options">
+        <h1 class="option-header">Edit Card</h1>
+        <div>
+          <hr>
+          <label for="gradient1">Gradient Colour 1: </label>
+          <input class="color1" type="color" name="gradient1" value="#ff0000"/>
+        </div>
+        <div>
+          <label for="gradient2">Gradient Colour 2: </label>
+          <input class="color2" type="color" name="gradient2" value="#00ff00"/>
+        </div>
+        <div>
+          <label for="top-color">Org's Name and date's font colour: </label>
+          <input class="top-font-color" type="color" name="top-color" value="#374233" />
+        </div>
+        <div>
+          <label for="bottom-font-color">Role and Name's font colour: </label>
+          <input class="bottom-font-color" type="color" name="bottom-color" value="#D0C9CF" />
+        </div>
+      <div>
+        <label for="company-name">Org's Name: </label>
+          <input class="comp-name" type="text" name="company-name" placeholder="Enter organisation's name here" />
+        </div>
+        <div>
+          <label for="username">Your Name: </label>
+          <input class="username"type="text" name="username" placeholder="Enter your name here" />
+        </div>
+        <div>
+          <label for="post">Your Role: </label>
+          <input class="role" type="text" name="post" placeholder="Enter your role here" />
+        </div>
+        <div>
+          <label for="date">The Date: </label><br>
+          <input class="date-form" type="date" name="date" value="18.05.20" />
+        </div>
+        <div>
+          <button class="btn">Apply!</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- footer -->
+  <footer>
+    <a href="https://twitter.com/ProCode1"><h1>&copy ProCode</h1></a>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

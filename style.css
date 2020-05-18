@@ -1,0 +1,237 @@
+/* Hey future me! How's everything? do you have a computer now? Don't worry! you got this!! wait are you in an interview? */
+
+*{
+  padding : 0;
+  margin : 0;
+}
+
+body{
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.3rem;
+  background: #F1F2FB;
+}
+
+a{
+  text-decoration: none;
+  color: #CACCE0;
+}
+
+
+/* styling the header */ 
+.header{
+  background : transparent;
+  text-align: center;
+  box-shadow: 3px 5px 10px 3px #75767F;
+}
+
+.header .logo{
+  font-size: 5rem;
+  padding: 2rem 0;
+  font-weight: 900;
+  text-shadow: 3px 3px 3px #000, 3px 3px antiquewhite;
+}
+
+/*  header style end */
+
+
+/*  card styling - using css grid */
+.create-card .container{
+  display : grid;
+  grid-template-columns : repeat(2 , 1fr);
+  grid-gap : 2rem;
+  align-items : center;
+  justify-content: center;
+}
+
+.create-card{
+  margin: 2rem 2rem;
+}
+
+.create-card .container .card-overlay{
+  position: relative;
+  background: linear-gradient(to right, #00064B , white);
+  margin: 1.5rem 1.3rem;
+  width : 50vw;
+  height: 14vh;
+  min-width: 300px;
+  min-height: 200px;
+  border-radius : 30px;
+  box-shadow: 5px 5px 15px 8px #555659;
+}
+
+/* grids everywhere */
+
+.create-card .container .card-overlay .card-inner{
+  margin : 2rem;
+  display : grid;
+  grid-gap: 3.8rem;
+}
+
+
+.create-card .container .card-overlay .card-inner .bottom-part{
+  color : #D0C9CF;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.create-card .container .card-overlay .card-inner .bottom-part .post{
+  font-size: 1.3rem;
+  margin-bottom : 10px;
+}
+
+.create-card .container .card-overlay .card-inner .top-part{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color : #374233;
+}
+
+.create-card .container .card-overlay .card-inner .top-part .date{
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+/* yak design for card's customisation form */
+.card-options{
+  display: grid;
+  grid-template-columns : 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align : center;
+  background: #00064B;
+  padding: 2rem 3rem;
+  color : white;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px 5px black;
+}
+
+.comp-name, .username, .role{
+  padding: 0.7rem;
+  border-radius: 30px;
+  border: 1px solid #071755;
+  outline : none;
+}
+
+.comp-name:hover, .username:hover, .role:hover{
+  box-shadow : 5px 5px 8px 5px #8CA0E9;
+}
+
+.color1, .color2, .top-font-color, .bottom-font-color{
+  background: #DEDEDE;
+  border: 1px solid #DEDEDE;
+  border-radius: 2px;
+  outline : 0;
+  margin: 1rem;
+}
+
+.date-form{
+  background: white;
+  padding: 0.3rem;
+  border-radius: 12px;
+  outline: none;
+}
+
+
+/*  footer */
+footer{
+  background : #00064B;
+  text-align: center;
+  color : #CACCE0;
+  padding: 2rem 0;
+  text-shadow: 2px 2px 2px #000;
+}
+
+
+/* utilities */
+
+.container{
+  max-width: 1100px;
+  padding: 2rem 2rem;
+}
+
+.btn{
+  background: #FAC400;
+  padding: 0.5rem 1rem;
+  border: 1px solid #FAC400;
+  border-radius: 12px;
+  outline : none;
+  font-size: 1.4rem;
+  font-weight: 620;
+  color: #04347E;
+}
+
+.btn:hover{
+  background: #031A3E;
+  color:#CACCE0;
+}
+
+/*  Media queries  */
+/* adaptive responsiveness */ 
+/* changing font according to screen size
+   Changing grid layouts */
+@media only screen and (max-width : 700px){
+  
+  .create-card .container{
+    grid-template-columns : 1fr;
+    
+  }
+  
+  .create-card .container .card-overlay .card-inner .top-part {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #374233;
+  }
+  
+  .create-card .container .card-overlay .card-inner .top-part .date {
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+  
+  .create-card .container .card-overlay {
+    position: relative;
+    margin: 2rem 2rem;
+    width: 80vw;
+    height: 30vh;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px 5px #555659;
+    
+  }
+    
+    .create-card .container .card-overlay .card-inner .bottom-part {
+      color: #D0C9CF;
+      font-size: 1.3rem;
+      font-weight: 700;
+      text-shadow: 1px 1px 1px #000;
+    }
+    
+    .create-card .container .card-overlay .card-inner .bottom-part .post {
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+    
+    .create-card .container .card-overlay .card-inner {
+      margin: 1.6rem;
+      display: grid;
+      grid-gap: 7vh;
+    }
+  .card-options{
+    padding: 1em;
+    font-size: 1em;
+    margin: 1em;
+  }
+  
+  .header .logo{
+    font-size: 3rem;
+  }
+  
+  .create-card .container .card-overlay .card-inner{
+    grid-gap:4rem;
+  }
+  
+}
+
+/* css : 1  me : 0 */
